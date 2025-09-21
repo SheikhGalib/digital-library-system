@@ -22,7 +22,7 @@ public class RealEbook implements EBook {
     public String getSize() {
         return "Size of ebook " + bookTitle + " is " + bookSize;
     }
-
+    // Use lazy loading to to load the ebook only when needed
     private void loadFromDisk() {
         System.out.println("Loading ebook from disk: " + bookTitle);
         // Simulate a time-consuming operation
